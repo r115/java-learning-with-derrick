@@ -18,6 +18,12 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Hello, World");
+        // type: String
+        // variablename: hello
+        // equate the variable to something: "Hello, World"
+        String habari = "Guten Morgen";
+
+        // Reference a variable using its name
+        System.out.println(habari);
     }
 }
