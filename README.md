@@ -1,18 +1,24 @@
-Introduction to Java: Variables
+Introduction to Java: Static Variables and Scoping
 ---
-Java variables always has a type.
+Static variables are always available when the class is initialized.
 
-Think of it as an address in memory.
+If the static variable is not declared as final, the values can be reassigned.
 
-e.g `int myNumber = 0;`
+`public static int exchangeRate = 116;`
 
-A variable can be references using its name.
+Like any other Java variable, the `final` modifier prevents alteration once class is instantiated.
+
+`public final static int commissionAsPercentage = 2;`
+
+Variable scopes goes is affected in 2 main ways;
+ - access modifier `protected`, `public`, `private`
+ - class variables: accessible directly to all class members
+ - local variables: usually defined within a method and are restricted there.
 
 Recommended reading
 ----
-- https://www.geeksforgeeks.org/variables-in-java
-- https://www.baeldung.com/java-syntax#declaring-variables-in-java
+- https://www.geeksforgeeks.org/variable-scope-in-java/?ref=lbp
+- https://www.baeldung.com/java-variable-scope
 
 Codewars
 ---
-https://www.codewars.com/kata/55ca77fa094a2af31f00002a/java

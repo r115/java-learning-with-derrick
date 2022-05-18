@@ -7,6 +7,10 @@ package com.andietech;
  * class: Java keyword
  */
 public class Main {
+    public final static int exchangeRate = 116;
+
+    public int userExchangeRate;
+
     /**
      * Multiline comment
      *
@@ -25,5 +29,15 @@ public class Main {
 
         // Reference a variable using its name
         System.out.println(habari);
+    }
+
+    public int convertDollarToKes() {
+        int commissionAsPercentage = 2;
+
+        int amountInShillings = 100 * exchangeRate;
+
+        float commission = (2 * amountInShillings) / 100;
+
+        return  0;
     }
 }
