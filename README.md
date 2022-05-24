@@ -33,3 +33,17 @@ Practise
 - Complete the methods for `waterDispenserAttribute`
 - Resolve error with the `exchangeMoney()` method on the `ExchangeCounter`
 - Describe teller attribute. Points: use it in the right class
+
+Previous Classes
+---
+- [Day 1](https://github.com/r115/java-learning-with-derrick/tree/day-1-hello-world)
+- [Day 2](https://github.com/r115/java-learning-with-derrick/tree/day-2-variables)
+- [Day 3](https://github.com/r115/java-learning-with-derrick/tree/day-3-static-variables-and-scope)
+
+To access the code;
+
+```
+git fetch
+
+git checkout day-3-static-variables-and-scope
+```
