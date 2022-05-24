@@ -1,24 +1,35 @@
-Introduction to Java: Static Variables and Scoping
+Introduction to Java: Class Methods
 ---
-Static variables are always available when the class is initialized.
+Since we are already adding new classes, this is an important concept to have a look at before proceeding further.
 
-If the static variable is not declared as final, the values can be reassigned.
+#### OOP Analogy
+Lets think about a car (Toyota Corolla) and think about an object (Toyota Corolla KAZ 114X).
 
-`public static int exchangeRate = 116;`
+The difference here if mapped to Java is that `Toyota Corolla` is a class which describes all attributes and methods (doing word :-)) that are available to fully explain that entity.
 
-Like any other Java variable, the `final` modifier prevents alteration once class is instantiated.
+On the other hand `Toyota Corolla KAZ 114X` is an object. In Java lingo, easiest way to think of this; it's an instance of a class.
 
-`public final static int commissionAsPercentage = 2;`
+It still remains possible to have another object `Toyota Corolla KBU 115R`
 
-Variable scopes goes is affected in 2 main ways;
- - access modifier `protected`, `public`, `private`
- - class variables: accessible directly to all class members
- - local variables: usually defined within a method and are restricted there.
+
+Just for memory sake;
+
+| Class       |  Object     |
+| ----------- | ----------- |
+| Animal      | Dog         |
+| Animal      | Cat         |
+| Car         | Sedan       |
+| Sedan       | Toyota      |
 
 Recommended reading
 ----
-- https://www.geeksforgeeks.org/variable-scope-in-java/?ref=lbp
-- https://www.baeldung.com/java-variable-scope
+- https://www.geeksforgeeks.org/classes-objects-java/?ref=lbp
+- https://www.geeksforgeeks.org/methods-in-java/?ref=lbp
+- https://www.baeldung.com/java-methods
+- https://www.programiz.com/java-programming/methods [highly recommended]
 
-Codewars
+Practise
 ---
+- Complete the methods for `waterDispenserAttribute`
+- Resolve error with the `exchangeMoney()` method on the `ExchangeCounter`
+- Describe teller attribute. Points: use it in the right class
