@@ -29,17 +29,13 @@ public class Main {
         // equate the variable to something: "Hello, World"
         String habari = "Guten Morgen";
 
+        Exchanger exchanger = new Exchanger();
+        exchanger.convert("usd","kes", exchangeRate, 100);
+        exchanger.convert("kes","tzs", 22, 100);
+
         // Reference a variable using its name
         System.out.println(habari);
     }
 
-    public int convertDollarToKes() {
-        int commissionAsPercentage = 2;
 
-        int amountInShillings = 100 * exchangeRate;
-
-        float commission = (2 * amountInShillings) / 100;
-
-        return  0;
-    }
 }

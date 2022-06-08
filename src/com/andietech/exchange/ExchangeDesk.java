@@ -8,7 +8,7 @@ package com.andietech.exchange;
  */
 public class ExchangeDesk {
     public float exchangeMoney(){
-
+        return 0;
     }
 
     public void haveConversationWithTeller() {

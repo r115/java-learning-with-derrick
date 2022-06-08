@@ -39,17 +39,20 @@ package com.andietech.exchange;
  * - ....
  */
 public class Exchanger {
-    private static int commissionAsPercentage = 2;
+    protected int commissionAsPercentage;
 
-    public float dollarToKes() {
-        int amount = 100;
-
-        return 0.0F;
+    public Exchanger() {
+        commissionAsPercentage = 2;
     }
 
-    public float ugxToKes() {
-        int amount = 100;
+    /**
+     * Convert from one currency to another.
+     *
+     * @return
+     */
+    public void convert(String originCurrency, String currency, float exchangeRate, float amount) {
+        float convertedAmount = amount * exchangeRate;
 
-        return 0.0F;
+        System.out.println(amount + originCurrency +" has been converted to " + convertedAmount + currency);
     }
 }

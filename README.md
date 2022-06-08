@@ -1,44 +1,43 @@
-Introduction to Java: Class Methods
+Introduction to Java: Methods with Parameters
 ---
-Since we are already adding new classes, this is an important concept to have a look at before proceeding further.
+A java method has 6 components.
 
-#### OOP Analogy
-Lets think about a car (Toyota Corolla) and think about an object (Toyota Corolla KAZ 114X).
+- modifier (`public`,`private`, `protected`, `default`)
+- return type
+- method name
+- parameter list
+- exception list
+- method body
 
-The difference here if mapped to Java is that `Toyota Corolla` is a class which describes all attributes and methods (doing word :-)) that are available to fully explain that entity.
+```java
+public float payCarBalance(float currentBalance, float monthlyRate, User currentUser, float amount){
+    // Reduce current blance
+        float updatedBalance = currentBalance - amount;
+        
+        return updatedBalance;
+}
+```
 
-On the other hand `Toyota Corolla KAZ 114X` is an object. In Java lingo, easiest way to think of this; it's an instance of a class.
+A method parameter must always have a type. 
 
-It still remains possible to have another object `Toyota Corolla KBU 115R`
-
-
-Just for memory sake;
-
-| Class       |  Object     |
-| ----------- | ----------- |
-| Animal      | Dog         |
-| Animal      | Cat         |
-| Car         | Sedan       |
-| Sedan       | Toyota      |
+Preferred naming is in camelcase.
 
 Recommended reading
 ----
-- https://www.geeksforgeeks.org/classes-objects-java/?ref=lbp
 - https://www.geeksforgeeks.org/methods-in-java/?ref=lbp
-- https://www.baeldung.com/java-methods
-- https://www.programiz.com/java-programming/methods [highly recommended]
+- https://www.cs.toronto.edu/~reid/web/javaparams.html
+- https://www.geeksforgeeks.org/argument-vs-parameter-in-java/
 
 Practise
 ---
-- Complete the methods for `waterDispenserAttribute`
-- Resolve error with the `exchangeMoney()` method on the `ExchangeCounter`
-- Describe teller attribute. Points: use it in the right class
+- Attempt to apply a commission to the exchanged funds. A commission is calaculated as a percentage of the converted amount. The commission is then deducted from the converted amount. Allow the `convert` method to use a flexible commission rate.
 
 Previous Classes
 ---
 - [Day 1](https://github.com/r115/java-learning-with-derrick/tree/day-1-hello-world)
 - [Day 2](https://github.com/r115/java-learning-with-derrick/tree/day-2-variables)
 - [Day 3](https://github.com/r115/java-learning-with-derrick/tree/day-3-static-variables-and-scope)
+- [Day 4](https://github.com/r115/java-learning-with-derrick/tree/day-4-oop-class-methods)
 
 To access the code;
 
